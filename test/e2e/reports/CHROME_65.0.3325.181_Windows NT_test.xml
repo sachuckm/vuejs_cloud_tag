@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="test"
+    errors="0" failures="0" hostname="" id="" package="test" skipped="0"
+    tests="4" time="30.85" timestamp="Mon, 02 Apr 2018 17:57:55 GMT">
+  
+    <testcase name="default e2e tests" classname="test" time="9.791" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="click on a rule" classname="test" time="3.861" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="mouse  over on a element to test detail page is present and and to check the length" classname="test" time="8.651" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Details screen" classname="test" time="8.551" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

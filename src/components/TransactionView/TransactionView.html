@@ -1,0 +1,22 @@
+<div class="lists">
+    <div class ="header">
+      <h1>{{text}}</h1>
+      </div>
+      <div id="back" v-if = "!isMainPage" v-on:click="onBackPress">
+          <img class="backImage" src="@/assets/back.jpeg"/>
+        <span
+          class ="backButton"
+          >RETURN</span>
+        </div>
+   <VueTagCloud 
+   :data="lists"
+   @onmouseclick="onmouseclick"
+   @onmouseover="onmouseover"></VueTagCloud>
+   <detail-page
+   class ="detailPage"
+   v-if = "isDetailPageActive && resultSet.length > 0"
+   :displayLengthOnHover = "displayLengthOnHover"
+   :lists= "resultSet"
+   ></detail-page>
+  </div>
+ 

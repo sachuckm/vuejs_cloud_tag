@@ -1,0 +1,13 @@
+<div class="detail-lists">
+    <div v-if = "displayLengthOnHover"> 
+            <p class = "detail-list-header"  >DETAILS</p>
+        <p class = "detail-list-length" >TOTAL MATCHES : {{lists.length}}</p>
+    </div>
+    <div  v-else> 
+            <p class = "detail-list-header"  >TRANSACTIONS</p>
+    <div v-for="(list, index) in lists" class = "detail-lists-loop" :class="'detail-lists-loop__' + index">
+        <span >
+       {{index+1 }} : {{list.transactionDescription}}</span>
+    </div>
+    </div>
+</div>

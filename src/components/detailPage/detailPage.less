@@ -1,0 +1,55 @@
+@iterations: 100;
+
+.mixin-loop (@i) when (@i >= 0) {
+  &__@{i} {
+    top: 70px + (@i * 50px);
+  }
+  .mixin-loop(@i - 1);
+}
+.one-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.detail-lists {
+    position: absolute;
+    left: 81%;
+    width: 400px;
+    height: auto;
+    min-height: 100%;
+    display: flex;
+   // overflow: auto;
+    background-color: grey;
+    .one-line    
+  }
+  .detail-list-header {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 28px;
+    width:400px;
+    text-align: left;
+  }
+  .detail-list-length {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    font-size: 22px;
+    width:400px;
+    text-align: left;
+  }
+  .detail-lists-loop {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    display: inline;
+    border-radius: 2px;
+    font-family: "Arial";
+    border: 0;
+    margin: 0 10px;
+    font-size: 22px;
+    width: 380px;
+    height: 40px;
+    box-sizing: content-box;
+    .mixin-loop(@iterations);
+    .one-line;
+  }
